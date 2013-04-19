@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Home</title>
+  <link rel="stylesheet" href="static/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+</head>
+<body class="lift:content_id=main">
+  <div id="main" class="lift:surround?with=default;at=content">
+    <h1>HTML5 Draughts</h1>
+    <div class="lift:Server">
+      <ul>
+        <li><a href="/" id="close">Close</a></li>
+      </ul>
+      <div id="gamecontrol">
+        <script type="text/javascript" charset="utf-8">
+        var arrival = (function() {
+          return {
+
+            playerArrived : function (name, color) {
+              $('#' + color + '_player')
+              .text(name)
+            },
+
+            playerLeaved : function (name, color) {
+              $('#' + color + '_player')
+              .text('waiting for player')
+            },
+
+            gameStarted : function() {
+              $('#gamecontrol').fadeOut();
+            }
+
+          }
+          }());
+          </script>
+          <div class="lift:comet?type=NewGame">
+            <h1>Spiel <span id="gamename">NAME</span></h1>
+            <p><div id="linkbox"><span id="link">http://localhost:8080/play/c69c4f782cb4d2cfb046fd1038802efe</span></div></p>
+            <div id="players">
+              <ul>
+                <li>
+                  <img alt="White" src="images/dame_white.png" />
+                  <span id="white_player">Scumbag Steve</span>
+                </li>
+                <li id="vs">vs.</li>
+                <li>
+                  <img alt="Black" src="images/dame_black.png" />
+                  <span id="black_player">Good Guy Greg</span>
+                </li>
+              </ul>
+              <a id="toggle_button" href="">Toggle</a>
+            </div>
+          </div>
+          <div id="control">
+            <form class="lift:form.ajax">
+              <div class="lift:NewGameForm">
+                <p>
+                  <label for="fieldsize">Fieldsize</label>
+                  <select name="fieldsize" id="fieldsize">
+                    <option value="option1">8x8</option>
+                    <option value="option2">6x7</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="rows">Rows</label>
+                  <select name="rows" id="rows">
+                    <option value="option1">2</option>
+                    <option value="option2">3</option>
+                  </select>
+                </p>
+                <p><input type="submit" id="start_button" value="Spiel starten" /></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <lift:embed what="templates-hidden/game" />
+      </div>
+    </div>
+  </body>
+</html>
+

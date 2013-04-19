@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font: 98% Verdana;
+}
+
+body {
+  color: #FFFFFF;
+  background: #512116;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#game {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 390px;
+ height: 455px;
+ margin-left: -195px;
+ margin-top: -227px;
+ z-index: 0;
+}
+
+#gamecontrol {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  height: 190px;
+  margin-left: -250px;
+  margin-top: -95px;
+  z-index: 1;
+  background-color: #FFFFFF;
+  zoom: 1; 
+  /*filter: alpha(opacity=90); 
+  opacity: 0.9;*/
+  border: 2px solid #000000;
+  padding: 10px;
+  color: #000000;
+}
+
+#create {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 90px;
+  margin-left: -115px;
+  margin-top: -45px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 15px;
+  paddig-top: auto;
+}
+
+#create input {
+  margin-top: 6px;
+}
+
+#create input[type=text] {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #FFEAD7;
+  padding:4px;
+  display: inline;
+  width: 190px;
+}
+
+#linkbox {
+  padding: 6px;
+  background-color: #FFEAD7;
+  color: #000000;
+  margin-top: 4px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+#control {
+  margin:7px;
+}
+
+#control label {
+  width:75px;
+  display:block;
+  float:left;
+  margin: 3px 3px 3px 0px;
+}
+
+#control select {
+  width:111px;
+  margin: 3px 3px 3px 0px;
+}
+
+#control input {
+  display:block;
+  width: 150px;
+  margin-top: 30px;
+}
+
+#players {
+  display:block;
+  width:281px;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+}
+
+#players span {
+  display:block;
+  width:100px;
+}
+
+#players ul {
+  list-style: none;
+}
+
+#players ul li {
+  float:left;
+  text-align: center;
+  margin: 10px;
+}
+
+#players ul li#vs {
+  padding-top: 20px;
+}
+
+#players ul li img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toggle_button {
+  text-align: center;
+  display:block;
+  clear: both;
+}
