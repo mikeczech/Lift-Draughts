@@ -14,4 +14,4 @@ Running the application is very simple by using the following command-line insid
 
 Then use your favorite browser to open the url http://127.0.0.1:8080. After the start screen of Lift-Draughts appeared, choose a name for your game and open it by clicking on the 'Open Game' button. Next you can invite a friend for a draughts game by sharing the shown link. If your opponent is ready just press the 'Start Game' button in order to start the game. Have fun!
 
-<i>Note that this project wasn't originally developed on GitHub. I just like to share the code :)</i>
+<i>Note that this project cannot be started without the original draughts game!</i>
