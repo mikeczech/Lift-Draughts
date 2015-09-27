@@ -1,6 +1,8 @@
 Lift-Draughts
 =============
 
+<i>Note that this project wasn't originally developed on GitHub. I just like to share the code :)</i>
+
 A simple draughts UI that is written in Javascript, Scala, HTML5 and the Lift-framework. It is an extension of a draughts game that was developed during the SWTPra 2011 (see http://goo.gl/1TFn8) by our group Nostradames. Lift-Draughts was developed originally to see how easy it would be to port an Eclipse (GEF) and RMI based application to a web application using most of the original java code. The answer is: It's pretty easy! Moreover I used this project to increase my own skills relating to the Scala language and the Lift-framework. The following features are implemented at this time:
 
 - user interface written in Javascript using HTML5 canvas,
